@@ -86,11 +86,11 @@ json
 3. Connect to your instance via SSH
 4. Run the setup script:
 
-\`\`\`bash
+
 # Copy the setup script to your EC2 instance
 chmod +x setup-ec2.sh
 ./setup-ec2.sh
-\`\`\`
+
 
 5. Update the `.env.local` file with your AWS credentials
 6. Your application should be accessible at `http://your-ec2-public-ip`
