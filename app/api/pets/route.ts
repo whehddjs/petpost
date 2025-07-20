@@ -83,7 +83,7 @@ export async function POST(request: NextRequest) {
       Key: fileName,
       Body: buffer,
       ContentType: file.type,
-      ACL: "public-read", // Make the image publicly accessible
+     // ACL: "public-read", // Make the image publicly accessible
     })
 
     await s3Client.send(uploadCommand)
