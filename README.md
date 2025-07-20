@@ -28,22 +28,22 @@ A simple pet adoption listing website built with Next.js, designed to be deploye
 
 1. Clone the repository
 2. Install dependencies:
-   \`\`\`bash
+ bash
    npm install
-   \`\`\`
+ 
 
 3. Create `.env.local` file:
-   \`\`\`env
+ env
    AWS_REGION=us-east-1
    AWS_ACCESS_KEY_ID=your_access_key_here
    AWS_SECRET_ACCESS_KEY=your_secret_key_here
    S3_BUCKET_NAME=petpost-images
-   \`\`\`
+ 
 
 4. Run the development server:
-   \`\`\`bash
+ bash
    npm run dev
-   \`\`\`
+ 
 
 ## AWS Setup
 
@@ -60,7 +60,7 @@ A simple pet adoption listing website built with Next.js, designed to be deploye
 2. Create a new user with programmatic access
 3. Attach the following policy:
 
-\`\`\`json
+json
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -75,7 +75,7 @@ A simple pet adoption listing website built with Next.js, designed to be deploye
         }
     ]
 }
-\`\`\`
+
 
 4. Save the Access Key ID and Secret Access Key
 
