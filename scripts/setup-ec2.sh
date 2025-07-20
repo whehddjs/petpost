@@ -34,7 +34,7 @@ cat > .env.local << EOF
 AWS_REGION=us-east-1
 AWS_ACCESS_KEY_ID=your_access_key_here
 AWS_SECRET_ACCESS_KEY=your_secret_key_here
-S3_BUCKET_NAME=petpost-images
+S3_BUCKET_NAME=petpost-photos
 EOF
 
 echo "Please update the .env.local file with your actual AWS credentials"
@@ -53,7 +53,7 @@ sudo systemctl enable nginx
 sudo tee /etc/nginx/conf.d/petpost.conf > /dev/null << EOF
 server {
     listen 80;
-    server_name your-domain.com;  # Replace with your domain or EC2 public IP
+    server_name 54.160.145.192;  # Replace with your domain or EC2 public IP
 
     location / {
         proxy_pass http://localhost:3000;
@@ -74,8 +74,8 @@ sudo nginx -t
 sudo systemctl restart nginx
 
 echo "Setup complete! Your PetPost application should be running."
-echo "Access it at http://your-ec2-public-ip"
+echo "Access it at http://54.160.145.192"
 echo "Don't forget to:"
 echo "1. Update .env.local with your AWS credentials"
-echo "2. Create an S3 bucket named 'petpost-images' (or update the bucket name)"
+echo "2. Create an S3 bucket named 'petpost-photos' (or update the bucket name)"
 echo "3. Configure your EC2 security group to allow HTTP traffic on port 80"
