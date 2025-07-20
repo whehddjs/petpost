@@ -1,0 +1,31 @@
+{
+  "pets": [
+    {
+      "id": "87ce2385-f1d6-45f4-b79d-8d48e8814fbe",
+      "name": "test",
+      "age": 2,
+      "breed": "test",
+      "description": "22",
+      "imageUrl": "https://petpost-photos.s3.us-east-1.amazonaws.com/9c8f2f10-9ae6-4be3-97b8-a6971fc9009c.jpeg",
+      "addedAt": "2025-07-20T21:09:29.107Z"
+    },
+    {
+      "id": "7f3ab13e-b45a-4bd1-9196-a7d56371bd3c",
+      "name": "test",
+      "age": 2,
+      "breed": "test",
+      "description": "22",
+      "imageUrl": "https://petpost-photos.s3.us-east-1.amazonaws.com/ebdde379-880b-4165-82c6-b5e1667cfcb8.jpeg",
+      "addedAt": "2025-07-20T21:10:41.647Z"
+    },
+    {
+      "id": "ee9b1ba7-53e7-4e8a-9854-0f1e5a0deecb",
+      "name": "33",
+      "age": 2,
+      "breed": "333",
+      "description": "333",
+      "imageUrl": "https://petpost-photos.s3.us-east-1.amazonaws.com/ebd121d7-ca89-4c5c-81f9-caf13ea62e5a.jpeg",
+      "addedAt": "2025-07-20T21:12:24.876Z"
+    }
+  ]
+}
