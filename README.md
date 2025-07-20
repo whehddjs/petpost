@@ -95,24 +95,7 @@ chmod +x setup-ec2.sh
 5. Update the `.env.local` file with your AWS credentials
 6. Your application should be accessible at `http://your-ec2-public-ip`
 
-## Project Structure
 
-\`\`\`
-petpost/
-├── app/
-│   ├── api/pets/route.ts      # API endpoints for pet CRUD operations
-│   ├── layout.tsx             # Root layout
-│   └── page.tsx               # Home page
-├── components/
-│   ├── add-pet-form.tsx       # Form to add new pets
-│   ├── pet-list.tsx           # Display list of pets
-│   └── ui/                    # shadcn/ui components
-├── data/
-│   └── pets.json              # Pet data storage (created automatically)
-├── scripts/
-│   └── setup-ec2.sh           # EC2 deployment script
-└── README.md
-\`\`\`
 
 ## Environment Variables
 
@@ -121,33 +104,3 @@ petpost/
 - `AWS_SECRET_ACCESS_KEY`: Your AWS secret key
 - `S3_BUCKET_NAME`: Your S3 bucket name for storing images
 
-## Security Considerations
-
-- Store AWS credentials securely
-- Use IAM roles instead of access keys when possible
-- Configure S3 bucket policies appropriately
-- Consider using CloudFront for better image delivery
-- Enable HTTPS in production
-
-## Troubleshooting
-
-### Common Issues
-
-1. **Images not uploading**: Check S3 permissions and bucket policy
-2. **App not accessible**: Verify EC2 security group allows HTTP traffic
-3. **Build errors**: Ensure Node.js 18+ is installed
-4. **Permission denied**: Check file permissions and ownership
-
-### Logs
-
-- Application logs: `pm2 logs petpost`
-- Nginx logs: `sudo tail -f /var/log/nginx/error.log`
-
-## Future Enhancements
-
-- Add user authentication
-- Implement database (RDS/DynamoDB)
-- Add search and filtering
-- Email notifications for new pets
-- Admin panel for pet management
-- Image optimization and resizing
